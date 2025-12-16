@@ -20,7 +20,6 @@
   animation: fadeCycle 72s infinite;
 }
 
-
 @keyframes fadeCycle {
   0%   { opacity: 0; }
   6%   { opacity: 1; }
@@ -53,36 +52,8 @@
 .searchBar{
   z-index: 2;
   width: 40%;
-  background: rgba(99, 99, 99, 0.8);
-  padding: 0.8rem;
-  border-radius: 8px;
+  background: rgba(255, 255, 255);
+
 }
 
-.searchBar input {
-  width: 83%;
-  color:#670038;
-}
-
-.searchBar input:focus{
-  outline: none;
-  box-shadow: none;
-}
-
-.searchBar input::placeholder{
-  color:#670038;
-}
-
-.searchBar button{
-  width: 15%;
-}
-
-.searchButton {
-  background-color:#670038; 
-  color: white;
-  margin-left: 2%;
-}
-
-.searchButton:hover {
-  background-color:#3e0022; 
-}
 
