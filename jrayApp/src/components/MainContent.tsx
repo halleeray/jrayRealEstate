@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
+import SearchBar from "./SearchBar";
 import "./MainContent.css";
 
 interface Props {
@@ -8,21 +9,19 @@ interface Props {
 }
 
 function MainContent({ bgimages, header }: Props) {
-  
+  const handleSearch = (query: string) => {
+    console.log("Searching for:", { query });
+  };
 
   return (
     <div className="main-container">
-      <div className="header">{header}</div>
-
-      {/* <form onSubmit={handleSubmit}>
-        <div>
-          <input id="locationInput" type="text">
-            Search
-          </input>
+      <div className="inner-container">
+        <div className="header">{header}</div>
+        <div className="searchBar">
+          <SearchBar onSearch={handleSearch} />
         </div>
-        <button type="submit">Search</button>
-      </form> */}
-
+      </div>
+      
       <div className="bg-wrapper">
         {bgimages.map((src, i) => (
           <div
