@@ -8,7 +8,6 @@ Modern, responsive website design for Julie Ray built with React + Typescript. T
 * TypeScript – Type safety and better developer experience
 * Vite – Fast build tool and dev server
 * CSS / Flexbox – Layout and animations
-* OpenStreetMap Nominatim API for location search
 
 ### Getting Started
 #### Requirements
