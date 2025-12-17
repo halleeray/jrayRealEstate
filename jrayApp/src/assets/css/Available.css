@@ -1,0 +1,10 @@
+.pageTitle{
+    color: #670038;
+    margin-left: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.properties-container{
+    display: flex;
+}

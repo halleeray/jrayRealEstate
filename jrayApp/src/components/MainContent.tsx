@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import SearchBar from "./SearchBar";
-import "./MainContent.css";
+import "../assets/css/MainContent.css";
 
 interface Props {
   bgimages: string[];
@@ -21,7 +21,7 @@ function MainContent({ bgimages, header }: Props) {
           <SearchBar onSearch={handleSearch} />
         </div>
       </div>
-      
+
       <div className="bg-wrapper">
         {bgimages.map((src, i) => (
           <div

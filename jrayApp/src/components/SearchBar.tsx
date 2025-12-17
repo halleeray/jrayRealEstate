@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { PiSlidersThin } from "react-icons/pi";
-import "./SearchBar.css";
+import "../assets/css/SearchBar.css";
 
 interface SearchProps {
   onSearch: (query: string, filters?: Filters) => void;

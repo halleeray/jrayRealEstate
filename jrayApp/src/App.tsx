@@ -1,17 +1,26 @@
-import Navbar from "./components/Navbar";
-import MainContent from "./components/MainContent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Closed from "./pages/Closed";
+import Available from "./pages/Available";
 
 function App() {
-  let mainNavItems = ["Available Properties", "Recently Closed", "Contact"];
-  let mainBrand = "Julie Ray";
-  let brandimg = "images/berkhath.png";
-  let bgimages = ["images/supermountain.jpg", "images/condo.jpg", "images/dining.jpg", "images/cutesmall.jpg", "images/entry.jpg", "images/evening.jpg", "images/kitchen.jpg", "images/land.jpg", "images/mountain.jpg"];
+  const properties = ["101 House St", "202 Home Ct"];
 
   return (
-    <div>
-      <Navbar brandimg={brandimg} header={mainBrand} items={mainNavItems} />
-      <MainContent bgimages={bgimages} header="Welcome to your dream home." />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/available" element={<Available />} />
+        <Route path="/closed" element={<Closed />} />
+        <Route
+          path="/contact"
+          element={
+            <Contact email="jraywinterpark@gmail.com" phone="(970) 531-0211" />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -19,7 +19,14 @@
     color: #670038;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
     color:#670038;
+}
+
+.navbar-brand img{
+    width: 80px;
+    height: 80px;
 }
 
