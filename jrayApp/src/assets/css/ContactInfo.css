@@ -1,0 +1,35 @@
+.contactCard{
+    background-color: white;
+    display: flex;
+    width: 25vw;
+    overflow: auto;
+}
+
+#agentPhoto{
+    padding: 5%;
+    height: 90%;
+}
+
+.agentInfo{
+    padding: 0.5rem;
+}
+
+#agentName {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#lic {
+    font-size: 12px;
+}
+
+#agentTitle{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#agentEmail {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}

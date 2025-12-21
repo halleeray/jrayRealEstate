@@ -12,16 +12,16 @@ interface Props {
 function MainLayout({ children }: Props) {
   let mainNavItems = [
     {
+      label: "Home",
+      path: "/",
+    },
+    {
       label: "Available Properties",
       path: "/available",
     },
     {
       label: "Recently Closed",
       path: "/closed",
-    },
-    {
-      label: "Contact",
-      path: "/contact",
     },
   ];
 

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus&display=swap');
 
-
 .navbar{
     padding: 10px 10px 10px 10px;
     font-family: 'Marcellus', sans-serif;
@@ -13,7 +12,7 @@
 }
 
 .navbar-brand  {
-    margin: 0 10px 0 10px;
+    margin: 0 1rem 0 1rem;
     padding: 0;
     font-size: 40px;
     color: #670038;
@@ -29,4 +28,3 @@
     width: 80px;
     height: 80px;
 }
-

@@ -1,17 +1,15 @@
 .about-container{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 1rem;
     font-family: 'Marcellus', sans-serif;
-
 }
 
 #headshotimg {
-    height: 100%;
+    width: 30vw;
 }
 
-.aboutInfo-container {
+.aboutInfo-container, .accreditation-container {
     width: 50%;
     font-size: 30px;
     font-weight: bold;
@@ -19,8 +17,23 @@
     margin-left: 5%;
 }
 
-.about-info{
+.aboutInfo, .accList{
     font-size: 20px;
     font-weight: 400;
     color: black;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+#showEllipses{
+    display: none;
+}
+
+.moreButton{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    border-bottom: 1px solid black;
 }

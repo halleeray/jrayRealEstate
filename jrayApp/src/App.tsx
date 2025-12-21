@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
 import Closed from "./pages/Closed";
 import Available from "./pages/Available";
 
@@ -13,12 +12,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/available" element={<Available />} />
         <Route path="/closed" element={<Closed />} />
-        <Route
-          path="/contact"
-          element={
-            <Contact email="jraywinterpark@gmail.com" phone="(970) 531-0211" />
-          }
-        />
       </Routes>
     </BrowserRouter>
   );

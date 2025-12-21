@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import SearchBar from "./SearchBar";
 import "../assets/css/MainContent.css";
+import ContactInfo from "./ContactInfo";
 
 interface Props {
   bgimages: string[];
@@ -19,6 +20,9 @@ function MainContent({ bgimages, header }: Props) {
         <div className="header">{header}</div>
         <div className="searchBar">
           <SearchBar onSearch={handleSearch} />
+        </div>
+        <div className="contactInfo">
+          <ContactInfo />
         </div>
       </div>
 
