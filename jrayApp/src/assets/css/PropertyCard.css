@@ -5,6 +5,25 @@
     padding: 1rem;
 }
 
+.propertyImageContainer {
+    position: relative;
+}
+
+.propertyImageContainer img{
+    border: 2px solid #670038;
+    box-shadow: 1px 1px grey;
+    width: 100%;
+}
+
+.saveButton {
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+  border: none;
+  cursor: pointer;
+  z-index: 10; 
+}
+
 .propertyPrice{
     font-size: 30px;
     font-weight: bold;
@@ -12,12 +31,6 @@
 
 .propertyLabel {
     font-size: 20px;
-}
-
-.propertyImage img{
-    border: 2px solid #670038;
-    box-shadow: 1px 1px grey;
-    width: 100%;
 }
 
 .propertyInfo{
